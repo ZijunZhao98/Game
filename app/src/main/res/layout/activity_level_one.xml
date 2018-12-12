@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".levelOne" tools:layout_editor_absoluteY="25dp">
+
+    <ImageView android:id="@+id/levelOneImg"
+               android:src="@drawable/day"
+               android:gravity="center"
+               android:scaleType="centerCrop"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               app:layout_constraintTop_toTopOf="@+id/btn_holder2"
+               app:layout_constraintStart_toStartOf="@+id/btn_holder2"/>
+
+    <TextView android:id="@+id/levelOneText"
+              android:textColor="#000"
+              android:textSize="20sp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="100dp"
+              android:text="Life is tiring, and sometimes you just want to go to sleep"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn_holder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    </FrameLayout>
+
+</RelativeLayout>
